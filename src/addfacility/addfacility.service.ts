@@ -12,7 +12,7 @@ export class AddfacilityService {
   }
 
   findAll() {
-    return `This action returns all addfacility`;
+    return this.prisma.addFacility.findMany();
   }
 
   findOne(id: number) {
